@@ -7,7 +7,7 @@ import { toggleSidebar } from '../../store/ui/uiSlice';
 
 export const SideBar = ({ drawerWidth = 240 }) => {
     const theme = useTheme();
-    const isMatch = useMediaQuery(theme.breakpoints.down('md'))
+    const isMatch = useMediaQuery(theme.breakpoints.down('sm'))
     const dispatch = useDispatch();
 
     let display = isMatch ? 'temporary' :'permanent';
